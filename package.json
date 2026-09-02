@@ -1,0 +1,15 @@
+{
+  "name": "livechat-mischat-monitor",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node server/index.js",
+    "check": "node --check server/index.js && node --check server/store.js && node --check server/telegram.js && node --check extension/background.js && node --check extension/content.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.8.1",
+    "express": "^5.1.0"
+  }
+}
