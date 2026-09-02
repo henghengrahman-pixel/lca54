@@ -7,7 +7,7 @@
     "node": ">=22 <25"
   },
   "scripts": {
-    "start": "./start.sh",
+    "start": "node --no-warnings server/index.js",
     "check": "node --check server/index.js && node --check server/store.js && node --check server/telegram.js && node --check extension/background.js && node --check extension/content.js"
   },
   "dependencies": {
